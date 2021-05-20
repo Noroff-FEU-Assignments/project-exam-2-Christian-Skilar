@@ -1,0 +1,142 @@
+.logo {
+	color: $primal-blue;
+	font-size: 50px;
+	text-transform: uppercase;
+	margin: 0 100px;
+	font-family: "adam";
+	transition: 400ms;
+}
+
+.logo:hover {
+	color: rgba(2, 191, 196, 0.7);
+	text-decoration: none;
+}
+
+.navbar-dark .navbar-toggler {
+	border-color: transparent;
+}
+
+.bg-dark {
+	background-color: $dark-gray !important;
+}
+
+.logout-btn {
+	color: $light-gray;
+	font-weight: 600;
+	background: $dark-gray;
+	border: 1px solid $primal-blue;
+	border-radius: 5px;
+	text-transform: uppercase;
+	padding: 5px;
+	transition: 300ms;
+}
+
+.logout-btn:hover {
+	color: $light;
+	background: $primal-blue;
+}
+
+.login-btn a {
+	border: 1px solid $primal-blue;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.login-btn a:hover {
+	color: $light;
+	background: $primal-blue;
+}
+// ---------- NAVIGATION LINKS ---------- /
+nav {
+	width: 100%;
+	margin: 0 auto;
+	background: $dark-gray;
+	padding: 10px 0;
+}
+nav ul {
+	list-style: none;
+	text-align: left;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: $light-gray;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+	transition: all .5s;
+}
+nav ul li a:hover {
+	color: $gray;
+	text-decoration: none;
+}
+
+/* stroke */
+
+nav.stroke ul {
+	padding: 0;
+}
+
+nav.stroke ul li:last-child {
+	float: right;
+	margin-top: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+nav.stroke ul li a {
+	position: relative;
+}
+nav.stroke ul li a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: $primal-blue;
+	height: 1px;
+}
+nav.stroke ul li a:hover:after {
+	width: 100%;
+}
+
+//
+// MEDIA QUERIES ---------------
+
+@media only screen and (max-width: 1051px) {
+	nav ul li a {
+		padding: 15px 10px;
+		margin: 0 5px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.logo {
+		font-size: 40px;
+		margin: 0 auto;
+		padding-left: 56px;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.logo {
+		margin: 0;
+		padding-left: 0;
+	}
+}

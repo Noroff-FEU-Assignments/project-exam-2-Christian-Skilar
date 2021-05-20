@@ -1,0 +1,60 @@
+// MODAL STYLES -----------------
+
+.modal-content {
+	margin-top: 200px;
+}
+
+.modal-title {
+	text-transform: uppercase;
+	margin-left: 95px;
+	font-size: 30px;
+}
+
+.date-container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.input-date {
+	border-bottom: 1px solid $gray;
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.btn-primary {
+	margin-top: 50px !important;
+}
+
+.btn-container-center {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.book-btn {
+	@include buttons;
+}
+
+//
+// MEDIA QUERIES ---------------
+
+@media only screen and (max-width: 575px) {
+	.modal-title {
+		margin-left: 0;
+		margin: 0 auto;
+	}
+
+	.btn-primary {
+		width: 90% !important;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.modal-title {
+		font-size: 25px;
+	}
+}
