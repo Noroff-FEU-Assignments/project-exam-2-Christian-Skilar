@@ -1,0 +1,113 @@
+.landingPage-img {
+	height: 90.8vh;
+	width: 100vw;
+	background-image: url(../../../img/nightcity.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+// DROPDOWN ------------------
+
+.search-bar-dropdown {
+	position: relative;
+	width: 80%;
+	margin: 10px auto;
+}
+
+.serchBox-links {
+	color: $dark;
+	background: #f9f9f9;
+	padding: 10px;
+	border-bottom: 1px solid #d9d9d9;
+	transition: 150ms;
+}
+
+.serchBox-links:last-child {
+	border-radius: 0 0 5px 5px;
+}
+
+.serchBox-links:first-child {
+	border-top: 1px solid #d9d9d9;
+}
+
+.serchBox-links:hover {
+	color: $primal-blue;
+	background: $light;
+	text-decoration: none;
+}
+
+#results {
+	position: absolute;
+	margin-top: -25px;
+	width: 100%;
+	height: 250px;
+	overflow: scroll;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+.src-container {
+	width: 50%;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	max-width: 1900px;
+	padding: 20px;
+
+	h2 {
+		color: $light;
+	}
+}
+
+.search-input {
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 10px;
+}
+
+.search-input:focus {
+	outline: none;
+}
+
+.iicons {
+	color: $dark-gray;
+	position: absolute;
+	top: 7px;
+	left: 93%;
+	margin: 10px;
+	cursor: pointer;
+}
+
+//
+// MEDIA QUERIES ---------------
+
+@media only screen and (max-width: 1200px) {
+	.search-bar-dropdown {
+		position: relative;
+		width: 80%;
+		margin: 10px auto;
+	}
+
+	.src-container {
+		width: 100%;
+		border-radius: 0;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.landingPage-img {
+		height: 93.6vh;
+	}
+}
+
+@media only screen and (max-width: 630px) {
+	.iicons {
+		left: 90%;
+	}
+}
